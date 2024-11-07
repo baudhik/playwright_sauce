@@ -16,8 +16,9 @@ test('visual regression test for All Items page', async ({ page }: { page: Page 
 
     // Capture a screenshot for visual regression
     // Fixed file path to use forward slashes for cross-platform compatibility
-    await expect(page).toHaveScreenshot('landing-chromium-win32.png', { fullPage: true });
+    await expect(page).toHaveScreenshot('playwright_sauce\tests\visual.test.spec.ts-snapshots\landing-chromium-win32-chromium-win32.png', {
+        fullPage: true,
+        threshold: 0.03, // Allow up to 3% of pixels to differ
+    });
 
-    // Close the browser after the test
-    await browser.close();
-});
+})

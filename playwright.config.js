@@ -32,6 +32,7 @@ module.exports = defineConfig({
   use: {
     baseURL: 'https://www.saucedemo.com/', // Example base URL
     headless: true, // Run in headless mode
+    video: 'on-first-retry',
   },
 
   /* Configure projects for major browsers */
@@ -40,7 +41,7 @@ module.exports = defineConfig({
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
-
+    
 
     /* Test against mobile viewports. */
     // {

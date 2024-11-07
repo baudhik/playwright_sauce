@@ -7,12 +7,36 @@ This repository contains automated tests for the [SauceDemo](https://www.saucede
 1. **Verify Sorting Order for Z-A** on the “All Items” page.
 2. **Verify Price Order (High-Low)** on the “All Items” page.
 3. **Add Multiple Items to Cart and Validate Checkout Journey**.
-4. **Bonus:**
-   - Automated Visual Tests for the pages.
-   - Automated Accessibility Tests for the pages.
+
+## Overview
+   This repository contains an automation suite using Playwright for testing core functionalities on Sauce Demo, including     sorting, cart functionality, visual regression, and accessibility.
 
 ## Prerequisites
+1. **Node.js** - Version >= 14.x
+2. **Playwright** - Run `npm install @playwright/test`
+3. **Browser Dependencies** - Run `npx playwright install` to install required browsers
 
-- **Node.js**: Ensure you have Node.js (version 16 or above) installed. You can verify this by running:
-  ```bash
-  node -v
+## Setup & Installation
+1. Clone this repository.
+2. Install dependencies:
+   npm install
+
+**Install Playwright browsers:**
+   npx playwright install
+
+**Running Tests**
+1. To run all tests:
+      npx playwright test
+
+2. To run a specific test file:
+      npx playwright test tests/sort.test.js
+
+**Headed/Headless Execution**
+1. To run tests in headed mode:
+      npx playwright test --headed
+   
+2. For headless mode:
+      npx playwright test
+
+**Accessibility**
+   Accessibility tests leverage @axe-core/playwright. Accessibility violations will appear in test output.
