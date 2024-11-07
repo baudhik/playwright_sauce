@@ -40,3 +40,6 @@ This repository contains automated tests for the [SauceDemo](https://www.saucede
 
 **Accessibility**
    Accessibility tests leverage @axe-core/playwright. Accessibility violations will appear in test output.
+
+**Test report** : for reivew automation test report user can wright below command after test automation is complete.
+	npx playwright show-report test-results
