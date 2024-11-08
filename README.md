@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Playwright Automation Tests for Saucedemo
 
 This repository contains automated tests for the [SauceDemo](https://www.saucedemo.com/) application using Playwright in JavaScript. The tests cover functionality such as sorting, price order, adding items to the cart, and the checkout flow. Additionally, it includes tests for visual and accessibility validations.
